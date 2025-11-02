@@ -10,7 +10,7 @@ body {
 /* Sekcja główna ze zdjęciem */
 .hero {
   position: relative;
-  background-image: url('./images/para.jpg'); /* ← tutaj wstaw swoje zdjęcie */
+  background-image: url('../images/para.jpg'); /* ← tutaj wstaw swoje zdjęcie */
   background-size: cover;
   background-position: center;
   height: 80vh;
