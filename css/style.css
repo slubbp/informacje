@@ -1,0 +1,96 @@
+/* Fonty i kolory */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+  background-color: #fffaf9;
+  line-height: 1.6;
+}
+
+/* Sekcja główna ze zdjęciem */
+.hero {
+  position: relative;
+  background-image: url('./images/para.jpg'); /* ← tutaj wstaw swoje zdjęcie */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero .date {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+/* Sekcje tekstowe */
+section {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #b37a5d;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Przycisk */
+.btn {
+  display: inline-block;
+  background-color: #b37a5d;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a06a51;
+}
+
+/* Stopka */
+footer {
+  background-color: #f5eae3;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #7a6a63;
+}
