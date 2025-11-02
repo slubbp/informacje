@@ -13,7 +13,7 @@ body {
   background-image: url('../images/para.jpg'); /* ← tutaj wstaw swoje zdjęcie */
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
