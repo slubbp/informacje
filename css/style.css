@@ -55,7 +55,7 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
   }
 
   .hero p {
