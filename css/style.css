@@ -20,12 +20,13 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
+  width: 100%;
+  overflow-x: hidden; /* zabezpieczenie */
 }
 
 @media (max-width: 768px) {
   .hero {
     background-image: url('../images/Sesja_narzeczenska_042.jpg');
-    padding-bottom: 23rem;
   }
 }
 
@@ -56,13 +57,22 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 3.4rem;
+    font-size: 2.4rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
+
+  .hero-content {
+    position: absolute;
+    top: 0%;   /* procent od góry */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+  }
 }
+
 
 .hero .date {
   font-weight: bold;
@@ -72,19 +82,16 @@ body {
 
 /* Sekcje tekstowe */
 section {
-  padding: 3rem 20rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  section {
   padding: 3rem 1rem;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  section {
+    padding: 1rem;
+  }
 }
 
 section h2 {
@@ -94,17 +101,47 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #b37a5d;
+  margin-bottom: 1rem;
+}
+}
+
+section h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  color: #b37a5d;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  section h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #b37a5d;
+  margin-bottom: 1rem;
+}
+}
+
 section p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
+section h1, section h2, section p {
+  word-wrap: break-word;   /* łamie długie słowa */
+  overflow-wrap: break-word;
+}
+
 section:nth-of-type(odd) {
-  background-color: #f5eae3; /* kolor dla sekcji nieparzystych */
+  background-color: #ffffff; /* kolor dla sekcji nieparzystych */
 }
 
 section:nth-of-type(even) {
-  background-color: #ffffff; /* kolor dla sekcji parzystych */
+  background-color: #f5eae3; /* kolor dla sekcji parzystych */
 }
 
 /* Przycisk */
@@ -134,7 +171,6 @@ footer {
 .counter {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    margin-top: 50px;
   }
 
 #countdown {
@@ -147,7 +183,7 @@ footer {
 
 @media (max-width: 768px) {
   #countdown {
-    grid-template-columns: repeat(2, 1fr); /* 2 kafelki w rzędzie */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -182,3 +218,35 @@ footer {
     50% { transform: scale(1.2); color: #b37a5d; }
     100% { transform: scale(1); }
   }
+
+  .map-container {
+  margin-bottom: 30px; /* odstęp pod pierwszą mapą */
+}
+
+iframe {
+  width: 100%;       /* dopasuj do szerokości ekranu */
+  max-width: 100%;   /* nie pozwól wyjść poza ekran */
+  height: 300px;     /* mniejsza wysokość na telefonie */
+  display: block;    /* zamiast inline-block */
+}
+
+@media (max-width: 768px) {
+  iframe {
+  width: 100%;
+  height: 300px;
+}
+}
+
+.phones {
+  display: flex;              /* ustawia elementy obok siebie */
+  justify-content: space-between; /* jeden po lewej, drugi po prawej */
+  padding: 1rem;
+}
+
+.phone-left {
+  text-align: center;
+}
+
+.phone-right {
+  text-align: center;
+}
