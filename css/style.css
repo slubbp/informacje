@@ -24,7 +24,8 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url('../images/para-mobile.jpg');
+    background-image: url('../images/Sesja_narzeczenska_042.jpg');
+    padding-bottom: 23rem;
   }
 }
 
@@ -71,10 +72,19 @@ body {
 
 /* Sekcje tekstowe */
 section {
+  padding: 3rem 20rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  section {
   padding: 3rem 1rem;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+}
 }
 
 section h2 {
@@ -87,6 +97,14 @@ section h2 {
 section p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+}
+
+section:nth-of-type(odd) {
+  background-color: #f5eae3; /* kolor dla sekcji nieparzystych */
+}
+
+section:nth-of-type(even) {
+  background-color: #ffffff; /* kolor dla sekcji parzystych */
 }
 
 /* Przycisk */
