@@ -101,12 +101,26 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+.guests h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #b37a5d;
+  margin-bottom: -2rem;
+}
+
 @media (max-width: 768px) {
 section h2 {
   font-family: 'Great Vibes', cursive;
   font-size: 2rem;
   color: #b37a5d;
   margin-bottom: 1rem;
+}
+
+.guests h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #b37a5d;
+  margin-bottom: -2rem;
 }
 }
 
