@@ -203,6 +203,10 @@ footer {
     max-width: 100%;
     height: auto;
   }
+  .responsive2 {
+    max-width: 40%;
+    height: auto;
+  }
 }
 
   .time-box {
