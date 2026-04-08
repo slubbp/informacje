@@ -1,4 +1,4 @@
-const weddingDate = new Date(2026, 5, 27, 15, 0, 0).getTime();
+const weddingDate = new Date(2026, 5, 27, 14, 0, 0).getTime();
 
   // Funkcja do aktualizacji i pulsowania tylko przy zmianie
   function updateValue(id, newValue) {
